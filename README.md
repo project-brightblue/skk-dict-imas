@@ -25,7 +25,6 @@ C:\Windows\IME\SKK0\DICTS
 2. 追加 を押します。
 3. 辞書の種類をSKK 辞書(UTF-8)にします。
 4. 場所の選択... を押し、ダウンロードした辞書を選択します。
-5. パスの先頭に file:/ という文字列がありますのでそれを除去します。
 
 ## License
 [MIT License](https://github.com/mlny/skk-dict-imascgss/blob/master/LICENSE)
