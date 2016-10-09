@@ -35,7 +35,7 @@ C:\Windows\IME\SKK0\DICTS
 2. 追加 を押します。
 3. 辞書の種類をSKK 辞書(EUC-JP)にします。
 4. 場所の選択... を押し、ダウンロードした辞書を選択します。
-5. codefirst版AquaSKKを使用していない、もしくはAquaSKK 4.4.0以前のバージョンをお使いの場合、「場所」の先頭にある*file:/*を削除します(この挙動は[AquaSKK 4.4.1で修正されました](/codefirst/aquaskk/issues/55))。
+5. codefirst版AquaSKKを使用していない、もしくはAquaSKK 4.4.0以前のバージョンをお使いの場合、「場所」の先頭にある*file:/*を削除します(この挙動は[AquaSKK 4.4.1で修正されました](https://github.com/codefirst/aquaskk/issues/55))。
 
 ### ibus-skk
 
