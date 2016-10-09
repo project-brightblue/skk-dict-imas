@@ -10,7 +10,7 @@
 
 ので、あらかじめご了承ください。
 
-## Download
+## ダウンロード
 
 [master.zip](https://github.com/mlny/skk-dict-imascgss/archive/master.zip)
 
@@ -20,27 +20,28 @@
 $ git clone https://github.com/mlny/skk-dict-imascgss.git
 ```
 
-## Usage
+## つかいかた
 
-### SKK日本語入力FEP(Windows)
+### [SKK日本語入力FEP](http://coexe.web.fc2.com/programs.html)
 
 ```
 C:\Windows\IME\SKK0\DICTS
 ```
 の下に辞書をコピーします。
 
-### AquaSKK(macOS)
+### [AquaSKK](https://github.com/codefirst/aquaskk)
 
 1. 設定画面を開き、辞書タブを開きます。
 2. 追加 を押します。
 3. 辞書の種類をSKK 辞書(EUC-JP)にします。
 4. 場所の選択... を押し、ダウンロードした辞書を選択します。
+5. codefirst版AquaSKKを使用していない、もしくはAquaSKK 4.4.0以前のバージョンをお使いの場合、「場所」の先頭にある*file:/*を削除します(この挙動は[AquaSKK 4.4.1で修正されました](/codefirst/aquaskk/issues/55))。
 
 ### ibus-skk
 
 ibus-skkの設定画面を開き、辞書タブ内でダウンロードした辞書をシステム辞書として追加すると辞書が使用できるようになります。
 
-## License
+## ライセンス
 
 [MIT License](https://github.com/mlny/skk-dict-imascgss/blob/master/LICENSE)
 
