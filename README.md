@@ -43,7 +43,8 @@ ibus-skkの設定画面を開き、辞書タブ内でダウンロードした辞
 
 ## ライセンス
 
-[MIT License](https://github.com/mlny/skk-dict-imascgss/blob/master/LICENSE)
+[CC0](https://creativecommons.org/publicdomain/zero/1.0/deed)  
+2016/12/10にMIT LicenseよりCC0に変更されました。
 
 ## Special Thanks(敬称略)
 
