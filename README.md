@@ -30,6 +30,8 @@ C:\Windows\IME\SKK0\DICTS
 ```
 の下に辞書をコピーします。声優辞書を使用する場合はUTF-8版(SKK-JISYO.imascgss.actors.utf8)をコピーしてください。
 
+**17年1月時点で開発中のαバージョン(11系)以降では、ユーザ個別辞書フォルダ機能が実装されています。バージョン11系以降をご利用の方は、 %APPDATA%\SKKFEP\DICTS 以下に辞書をコピーしてください。(どちらか分からない場合は上記のシステムフォルダ内にコピーしてください)**
+
 ### [AquaSKK](https://github.com/codefirst/aquaskk)
 
 ![2017-01-08 4 09 42](https://cloud.githubusercontent.com/assets/5173607/21744443/28e1fc28-d559-11e6-92cc-8a173416bdf0.png)
