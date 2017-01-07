@@ -40,12 +40,13 @@ C:\Windows\IME\SKK0\DICTS
 2. 追加 を押します。
 3. 辞書の種類をSKK 辞書(EUC-JP)にします。
 4. 場所の選択... を押し、ダウンロードした辞書を選択します。
-5. 声優辞書を使用する場合、3. の手順でSKK 辞書(UTF-8)を選択し、辞書ファイルはSKK-JISYO.imascgss.actors.utf8を選択してください。
+5. 声優辞書を使用する場合、3. の手順でSKK 辞書(UTF-8)を選択し、辞書ファイルはUTF-8版(SKK-JISYO.imascgss.actors.utf8)を選択してください。
 6. codefirst版AquaSKKを使用していない、もしくはAquaSKK 4.4.0以前のバージョンをお使いの場合、「場所」の先頭にある*file:/*を削除します(この挙動は[AquaSKK 4.4.1で修正されました](https://github.com/codefirst/aquaskk/issues/55))。
 
 ### ibus-skk
 
 ibus-skkの設定画面を開き、辞書タブ内でダウンロードした辞書をシステム辞書として追加すると辞書が使用できるようになります。  
+声優辞書を使用する場合はEUC版(SKK-JISYO.imascgss.actors.euc)をご使用ください。
 
 ## ライセンス
 
