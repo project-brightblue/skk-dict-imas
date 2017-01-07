@@ -32,6 +32,8 @@ C:\Windows\IME\SKK0\DICTS
 
 ### [AquaSKK](https://github.com/codefirst/aquaskk)
 
+![2017-01-08 4 09 42](https://cloud.githubusercontent.com/assets/5173607/21744443/28e1fc28-d559-11e6-92cc-8a173416bdf0.png)
+
 1. 設定画面を開き、辞書タブを開きます。
 2. 追加 を押します。
 3. 辞書の種類をSKK 辞書(EUC-JP)にします。
