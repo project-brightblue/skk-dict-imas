@@ -7,7 +7,6 @@
 現在はデレステに実装済のアイドルの名前と声優さんの名前が収録されています。引き続き辞書内容の拡張を検討しています([#3](https://github.com/mlny/skk-dict-imascgss/issues/3))。  
 
 ## おことわり
-* スターライトステージに実装されていないアイドルの名前は収録されていません。ブラウザーゲーム版の話題をする場合は注意が必要です。
 * 声優辞書(actors)は字体の都合でUTF-8版とEUC版に分かれています。UTF-8に対応している実装の場合はUTF-8版を使用してください。
 * 辞書の編集を行う際は、/srcフォルダ内の辞書を操作した後で/build.shを実行してください。(skktoolsが必要です)
 
@@ -25,12 +24,20 @@ $ git clone https://github.com/mlny/skk-dict-imascgss.git
 
 ### [SKK日本語入力FEP](http://coexe.web.fc2.com/programs.html)
 
+#### β0+11i版以降
+
+```
+%APPDATA%\SKKFEP\DICTS
+```
+の下に辞書をコピーします。声優辞書を使用する場合はUTF-8版(SKK-JISYO.imascgss.actors.utf8)をコピーしてください。
+
+
+#### β0+10i版以前
+
 ```
 C:\Windows\IME\SKK0\DICTS
 ```
 の下に辞書をコピーします。声優辞書を使用する場合はUTF-8版(SKK-JISYO.imascgss.actors.utf8)をコピーしてください。
-
-**17年1月時点で開発中のαバージョン(11系)以降では、ユーザ個別辞書フォルダ機能が実装されています。バージョン11系以降をご利用の方は、 %APPDATA%\SKKFEP\DICTS 以下に辞書をコピーしてください。(どちらか分からない場合は上記のシステムフォルダ内にコピーしてください)**
 
 ### [AquaSKK](https://github.com/codefirst/aquaskk)
 
