@@ -27,5 +27,7 @@ else
 	echo '$ sudo apt install skktools'
 	echo 'Arch Linux: '
 	echo '$ sudo pacman -S skktools'
+	echo 'macOS(Requires Homebrew): '
+	echo '$ brew install skktools'
 fi
 
