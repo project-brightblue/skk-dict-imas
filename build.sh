@@ -2,7 +2,7 @@
 
 # ソート処理
 generate (){
-
+	
 	# idol name
 	echo 'Generate idols name dict...'
 	cat ./src/FIRSTNAME | skkdic-sort > ./SKK-JISYO.imascgss.firstname
@@ -11,8 +11,8 @@ generate (){
 	
 	# actors
 	echo 'Generate actors dict...'
-	cat ./src/ACTORS_euc | skkdic-sort > ./SKK-JISYO.imascgss.actors.euc
-	cat ./src/ACTORS_utf8 | skkdic-sort > ./SKK-JISYO.imascgss.actors.utf8
+	sed -f ./src/ACTORS.sed ./src/ACTORS | iconv -f UTF-8 -t EUC-JP | skkdic-sort > ./SKK-JISYO.imascgss.actors.euc
+	cat ./src/ACTORS | skkdic-sort > ./SKK-JISYO.imascgss.actors.utf8
 	echo 'done.'
 
 }
