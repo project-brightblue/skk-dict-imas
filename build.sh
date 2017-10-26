@@ -17,7 +17,8 @@ generate (){
 
 	# song
 	echo 'Generate song dict...'
-	cat ./src/SONG | skkdic-sort > ./SKK-JISYO.imascg.song | skkdic-sort > ./SKK-JISYO.imascg.song
+	sed -f ./src/SONG.sed ./src/SONG | iconv -f UTF-8 -t EUC-JP | skkdic-sort > ./SKK-JISYO.imascg.song.euc
+	cat ./src/SONG | skkdic-sort > ./SKK-JISYO.imascg.song.utf8
 	echo 'done.'
 }
 
