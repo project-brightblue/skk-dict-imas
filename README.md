@@ -1,22 +1,22 @@
-# skk-dict-imascgss
+# skk-dict-imascg
 
 ![cgss](https://cloud.githubusercontent.com/assets/5173607/21075603/97e3999e-bf59-11e6-9db2-f3816c3b898f.png)
 
 ソーシャルゲーム「アイドルマスター シンデレラガールズ」に関する語句を収録したSKK辞書です。
 
-現在はモバマス/デレステに実装済のアイドルの名前と、彼女らの声を担当する声優さんの名前が収録されています。引き続き辞書内容の拡張を検討しています([#3](https://github.com/mlny/skk-dict-imascgss/issues/3))。  
+現在はモバマス/デレステに実装済のアイドルの名前と、彼女らの声を担当する声優さんの名前が収録されています。引き続き辞書内容の拡張を検討しています([#3](https://github.com/brightblue-project/skk-dict-imascg/issues/3))。  
 
 ## おことわり
 * 声優辞書(actors)は字体の都合でUTF-8版とEUC版に分かれています。UTF-8に対応している実装の場合はUTF-8版を使用してください。
 * 辞書の編集を行う際は、/srcフォルダ内の辞書を操作した後で/build.shを実行してください。(skktoolsが必要です)
 
 ## ダウンロード
-[master.zip](https://github.com/mlny/skk-dict-imascgss/archive/master.zip)
+[master.zip](https://github.com/brightblue-project/skk-dict-imascg/archive/master.zip)
 
 もしくはgitがインストールされている環境で
 
 ```
-$ git clone https://github.com/mlny/skk-dict-imascgss.git
+$ git clone https://github.com/brightblue-project/skk-dict-imascg.git
 ```
 
 ## つかいかた
