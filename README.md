@@ -22,10 +22,12 @@ $ git clone https://github.com/project-brightblue/skk-dict-imascg.git
 ## つかいかた
 ### [SKK日本語入力FEP](http://coexe.web.fc2.com/programs.html)
 #### β0+11i版以降
+付属のSKKFEP.batを実行してください。もしくは、
+
 ```
 %APPDATA%\SKKFEP\DICTS
 ```
-の下に辞書をコピーします。声優辞書を使用する場合はUTF-8版(SKK-JISYO.imascgss.actors.utf8)をコピーしてください。
+の下に辞書をコピーしてください。声優辞書を使用する場合はUTF-8版(SKK-JISYO.imascgss.actors.utf8)をコピーしてください。
 
 #### β0+10i版以前
 ```
@@ -40,7 +42,7 @@ C:\Windows\IME\SKK0\DICTS
 2. 追加 を押します。
 3. 辞書の種類をSKK 辞書(EUC-JP)にします。
 4. 場所の選択... を押し、ダウンロードした辞書を選択します。
-5. 声優辞書を使用する場合、3. の手順でSKK 辞書(UTF-8)を選択し、辞書ファイルはUTF-8版(SKK-JISYO.imascgss.actors.utf8)を選択してください。
+5. 声優辞書を使用する場合、3. の手順でSKK 辞書(UTF-8)を選択し、辞書ファイルはUTF-8版(SKK-JISYO.imascg.actors.utf8)を選択してください。
 6. codefirst版AquaSKKを使用していない、もしくはAquaSKK 4.4.0以前のバージョンをお使いの場合、「場所」の先頭にある*file:/*を削除します(この挙動は[AquaSKK 4.4.1で修正されました](https://github.com/codefirst/aquaskk/issues/55))。
 
 ### ibus-skk
@@ -49,7 +51,6 @@ ibus-skkの設定画面を開き、辞書タブ内でダウンロードした辞
 
 ## ライセンス
 [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed)  
-2016/12/10にMIT LicenseよりCC0に変更されました。
 
 ## Special Thanks(敬称略)
 * mzp( [@mzp](https://twitter.com/mzp) )
