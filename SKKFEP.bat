@@ -3,7 +3,7 @@
 set SRC="."
 set DIST="%APPDATA%\SKKFEP\DICTS"
 
-echo skk-dict-imascg SKKFEPç”¨å°Žå…¥ãƒãƒƒãƒãƒ•ã‚¡ã‚¤ãƒ«
+echo skk-dict-imascg SKKFEP—p“±“üƒoƒbƒ`ƒtƒ@ƒCƒ‹
 echo ###########################################
 echo.
 
@@ -14,7 +14,7 @@ copy /Y %SRC%\SKK-JISYO.imascg.firstname %DIST%\SKK-JISYO.imascg.firstname > nul
 copy /Y %SRC%\SKK-JISYO.imascg.fullname %DIST%\SKK-JISYO.imascg.fullname > nul 2>&1
 copy /Y %SRC%\SKK-JISYO.imascg.song %DIST%\SKK-JISYO.imascg.song > nul 2>&1
 
-echo è¾žæ›¸ã‚’ã‚³ãƒ”ãƒ¼ã—ã¾ã—ãŸã€‚
+echo Ž«‘‚ðƒRƒs[‚µ‚Ü‚µ‚½B
 echo ###########################################
 echo.
 pause
