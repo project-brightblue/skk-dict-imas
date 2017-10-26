@@ -5,16 +5,20 @@ generate (){
 	
 	# idol name
 	echo 'Generate idols name dict...'
-	cat ./src/FIRSTNAME | skkdic-sort > ./SKK-JISYO.imascgss.firstname
-	cat ./src/FULLNAME | skkdic-sort > ./SKK-JISYO.imascgss.fullname
+	cat ./src/FIRSTNAME | skkdic-sort > ./SKK-JISYO.imascg.firstname
+	cat ./src/FULLNAME | skkdic-sort > ./SKK-JISYO.imascg.fullname
 	echo 'done.'
 	
 	# actors
 	echo 'Generate actors dict...'
-	sed -f ./src/ACTORS.sed ./src/ACTORS | iconv -f UTF-8 -t EUC-JP | skkdic-sort > ./SKK-JISYO.imascgss.actors.euc
-	cat ./src/ACTORS | skkdic-sort > ./SKK-JISYO.imascgss.actors.utf8
+	sed -f ./src/ACTORS.sed ./src/ACTORS | iconv -f UTF-8 -t EUC-JP | skkdic-sort > ./SKK-JISYO.imascg.actors.euc
+	cat ./src/ACTORS | skkdic-sort > ./SKK-JISYO.imascg.actors.utf8
 	echo 'done.'
 
+	# song
+	echo 'Generate song dict...'
+	cat ./src/SONG | skkdic-sort > ./SKK-JISYO.imascg.song | skkdic-sort > ./SKK-JISYO.imascg.song
+	echo 'done.'
 }
 
 which skkdic-sort > /dev/null 2>&1
