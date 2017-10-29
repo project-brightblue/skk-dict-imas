@@ -19,6 +19,17 @@
 $ git clone https://github.com/project-brightblue/skk-dict-imascg.git
 ```
 
+## 辞書一覧
+
+|ファイル名                   |辞書の内容                     |
+|-----------------------------|-------------------------------|
+|SKK-JISYO.imascg.actors.euc  |声優名(EUC-JP)                 |
+|SKK-JISYO.imascg.actors.utf8 |声優名(UTF-8)                  |
+|SKK-JISYO.imascg.firstname   |アイドル名(下の名前, EUC-JP)   |
+|SKK-JISYO.imascg.fullname    |アイドル名(フルネーム, EUC-JP) |
+|SKK-JISYO.imascg.song.euc    |楽曲名(EUC-JP)                 |
+|SKK-JISYO.imascg.song.utf8   |楽曲名(UTF-8)                  |
+
 ## つかいかた
 ### [SKK日本語入力FEP](http://coexe.web.fc2.com/programs.html)
 #### β0+11i版以降
