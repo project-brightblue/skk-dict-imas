@@ -1,14 +1,12 @@
 #!/bin/bash
-
 # ソート処理
 generate (){
-	
 	# idol name
 	echo 'Generate idols name dict...'
 	cat ./src/FIRSTNAME | skkdic-sort > ./SKK-JISYO.imascg.firstname
 	cat ./src/FULLNAME | skkdic-sort > ./SKK-JISYO.imascg.fullname
 	echo 'done.'
-	
+
 	# actors
 	echo 'Generate actors dict...'
 	sed -f ./src/ACTORS.sed ./src/ACTORS | iconv -f UTF-8 -t EUC-JP | skkdic-sort > ./SKK-JISYO.imascg.actors.euc
