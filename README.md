@@ -25,6 +25,8 @@ $ git clone https://github.com/mlny/skk-dict-imasml.git
 ```
 の下に辞書をコピーします。声優辞書を使用する場合はUTF-8版(SKK-JISYO.imascgss.actors.utf8)をコピーしてください。
 
+もしくは、SKKFEP.batを実行してください。
+
 #### β0+10i版以前
 ```
 C:\Windows\IME\SKK0\DICTS
