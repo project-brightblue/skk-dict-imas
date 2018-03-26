@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/5173607/37890050-0739f6a8-310a-11e8-936a-f86cdb8a8d84.png)
+
 # skk-dict-imassc
 
 携帯電話向けブラウザゲーム「アイドルマスター シャイニーカラーズ」に関する語句を収録したSKK辞書です。
