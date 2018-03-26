@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/5173607/37890050-0739f6a8-310a-11e8-936a-f86cdb8a8d84.png)
+![image](https://user-images.githubusercontent.com/5173607/37890070-18c60268-310a-11e8-8ce4-cf3a1af29fe6.png)
 
 # skk-dict-imassc
 
