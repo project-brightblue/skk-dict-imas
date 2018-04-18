@@ -29,6 +29,8 @@ $ git clone https://github.com/project-brightblue/skk-dict-imascg.git
 |SKK-JISYO.imascg.fullname    |アイドル名(フルネーム, EUC-JP) |
 |SKK-JISYO.imascg.song.euc    |楽曲名(EUC-JP)                 |
 |SKK-JISYO.imascg.song.utf8   |楽曲名(UTF-8)                  |
+|SKK-JISYO.imascg.unified.euc |全部入り(EUC-JP)               |
+|SKK-JISYO.imascg.unified.utf8|全部入り(UTF-8)                |
 
 ## つかいかた
 ### [SKK日本語入力FEP](http://coexe.web.fc2.com/programs.html)
