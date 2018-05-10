@@ -7,8 +7,10 @@ generate (){
     skkdic-expr2 ATOK-DICT.imascg.actors + ATOK-DICT.imascg.firstname + ATOK-DICT.imascg.fullname > ATOK-DICT.imascg.tmp
     rm ATOK-DICT.imascg.actors ATOK-DICT.imascg.firstname ATOK-DICT.imascg.fullname
     # 統合辞書をATOKフォーマットに変換する
-    echo '!!ATOK_TANGO_TEXT_HEADER_1' > ATOK-DICT.imascg.txt
+    echo -e '!!ATOK_TANGO_TEXT_HEADER_1\r\n!!一覧出力\r\n!!対象辞書;\r\n!!単語種類;登録単語(*)\r\n!!出力日時;2018-05-10 00:00:00 +0000\r\n' > ATOK-DICT.imascg.txt
     sed -f skktoatok.sed ATOK-DICT.imascg.tmp >> ATOK-DICT.imascg.txt
+    iconv -f UTF-8 -t UTF-16 ATOK-DICT.imascg.txt -o ATOK-DICT.imascg.txt.utf16
+    mv ATOK-DICT.imascg.txt.utf16 ATOK-DICT.imascg.txt
     rm ATOK-DICT.imascg.tmp
 	echo 'done.'
 }
