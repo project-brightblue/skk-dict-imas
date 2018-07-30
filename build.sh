@@ -16,6 +16,12 @@ generate (){
 	echo 'Generate unified dict...'
 	skkdic-expr2 ./SKK-JISYO.imassc.firstname + ./SKK-JISYO.imassc.fullname + ./SKK-JISYO.imassc.actors > ./SKK-JISYO.imassc.unified
 	echo 'done.'
+
+	# ATOK
+	echo 'Generate ATOK dict...'
+	cd ./ATOK
+	sh ./build.sh
+	echo 'done.'
 }
 
 which skkdic-sort > /dev/null 2>&1

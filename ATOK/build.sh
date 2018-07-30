@@ -1,7 +1,7 @@
 #!/bin/bash
 generate (){
     # ソートしてあるUTF-8の統合辞書をつくる
-    cat ../src/ACTORS | skkdic-sort > ./ATOK-DICT.imassc.actors
+    cat ../src/ACTORS | iconv -f EUC-JP -t UTF-8 | skkdic-sort > ./ATOK-DICT.imassc.actors
     cat ../src/FIRSTNAME | iconv -f EUC-JP -t UTF-8 | skkdic-sort > ./ATOK-DICT.imassc.firstname
     cat ../src/FULLNAME | iconv -f EUC-JP -t UTF-8 | skkdic-sort > ./ATOK-DICT.imassc.fullname
     skkdic-expr2 ATOK-DICT.imassc.actors + ATOK-DICT.imassc.firstname + ATOK-DICT.imassc.fullname > ATOK-DICT.imassc.tmp
