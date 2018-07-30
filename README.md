@@ -4,10 +4,9 @@
 
 携帯電話向けブラウザゲーム「アイドルマスター シャイニーカラーズ」に関する語句を収録したSKK辞書です。
 
-現在はモバマス/デレステに実装済のアイドルの名前と、彼女らの声を担当する声優さんの名前が収録されています。  
+現在はシャニマスに実装済のアイドルの名前と、彼女らの声を担当する声優さんの名前が収録されています。  
 
 ## おことわり
-* 声優辞書(actors)は字体の都合でUTF-8版とEUC版に分かれています。UTF-8に対応している実装の場合はUTF-8版を使用してください。
 * 辞書の編集を行う際は、/srcフォルダ内の辞書を操作した後で/build.shを実行してください。(skktoolsが必要です)
 
 ## ダウンロード
@@ -25,6 +24,7 @@ $ git clone https://github.com/project-brightblue/skk-dict-imassc.git
 |-----------------------------|-------------------------------|
 |SKK-JISYO.imassc.firstname   |アイドル名(下の名前, EUC-JP)   |
 |SKK-JISYO.imassc.fullname    |アイドル名(フルネーム, EUC-JP) |
+|SKK-JISYO.imassc.actors      |声優名(フルネーム, EUC-JP)     |
 
 ## つかいかた
 ### [SKK日本語入力FEP](http://coexe.web.fc2.com/programs.html)
@@ -49,12 +49,10 @@ C:\Windows\IME\SKK0\DICTS
 2. 追加 を押します。
 3. 辞書の種類をSKK 辞書(EUC-JP)にします。
 4. 場所の選択... を押し、ダウンロードした辞書を選択します。
-5. 声優辞書を使用する場合、3. の手順でSKK 辞書(UTF-8)を選択し、辞書ファイルはUTF-8版(SKK-JISYO.imascg.actors.utf8)を選択してください。
-6. codefirst版AquaSKKを使用していない、もしくはAquaSKK 4.4.0以前のバージョンをお使いの場合、「場所」の先頭にある*file:/*を削除します(この挙動は[AquaSKK 4.4.1で修正されました](https://github.com/codefirst/aquaskk/issues/55))。
+5. codefirst版AquaSKKを使用していない、もしくはAquaSKK 4.4.0以前のバージョンをお使いの場合、「場所」の先頭にある*file:/*を削除します(この挙動は[AquaSKK 4.4.1で修正されました](https://github.com/codefirst/aquaskk/issues/55))。
 
 ### ibus-skk
 ibus-skkの設定画面を開き、辞書タブ内でダウンロードした辞書をシステム辞書として追加すると辞書が使用できるようになります。  
-声優辞書を使用する場合はEUC版(SKK-JISYO.imascgss.actors.euc)をご使用ください。
 
 ## ライセンス
 [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed)  
