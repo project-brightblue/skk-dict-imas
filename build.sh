@@ -8,10 +8,14 @@ generate (){
 	echo 'done.'
 
 	# actors
-	#echo 'Generate actors dict...'
-	#sed -f ./src/ACTORS.sed ./src/ACTORS | iconv -f UTF-8 -t EUC-JP | skkdic-sort > ./SKK-JISYO.imascg.actors.euc
-	#cat ./src/ACTORS | skkdic-sort > ./SKK-JISYO.imascg.actors.utf8
-	#echo 'done.'
+	echo 'Generate actors dict...'
+	cat ./src/ACTORS | skkdic-sort > ./SKK-JISYO.imassc.actors
+	echo 'done.'
+
+	# unified
+	echo 'Generate unified dict...'
+	skkdic-expr2 ./SKK-JISYO.imassc.firstname + ./SKK-JISYO.imassc.fullname + ./SKK-JISYO.imassc.actors > ./SKK-JISYO.imassc.unified
+	echo 'done.'
 }
 
 which skkdic-sort > /dev/null 2>&1
