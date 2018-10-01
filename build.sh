@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# このスクリプトは改良作業中です。
+
 # ソート処理
 generate (){
 	# 下準備
@@ -39,15 +42,26 @@ generate (){
 
 which skkdic-sort > /dev/null 2>&1
 
-if [ $? = 0 ]; then
-	generate
+if [ "$(uname)" == 'Darwin' ]; then
+	# macOS
+	echo 'Your platform is macOS'
+elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
+	# Linux
+	echo 'Your platform is Linux'
 else
-	echo 'Please install skkdic-sort(Included in skktools).'
-	echo 'Ubuntu/Debian: '
-	echo '$ sudo apt install skktools'
-	echo 'Arch Linux: '
-	echo '$ sudo pacman -S skktools'
-	echo 'macOS(Requires Homebrew): '
-	echo '$ brew install skktools'
+  echo "Your platform ($(uname -a)) is not supported."
+  exit 1
 fi
+
+# if [ $? = 0 ]; then
+# 	generate
+# else
+# 	echo 'Please install skkdic-sort(Included in skktools).'
+# 	echo 'Ubuntu/Debian: '
+#	echo '$ sudo apt install skktools'
+#	echo 'Arch Linux: '
+#	echo '$ sudo pacman -S skktools'
+#	echo 'macOS(Requires Homebrew): '
+#	echo '$ brew install skktools'
+#fi
 
