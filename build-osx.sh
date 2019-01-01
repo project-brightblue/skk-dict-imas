@@ -44,10 +44,13 @@ which skkdic-sort > /dev/null 2>&1
 
 if [ "$(uname)" == 'Darwin' ]; then
 	# macOS
-	echo 'Your platform is macOS'
+	echo 'Your platform is macOS.'
+	generate
 elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
 	# Linux
-	echo 'Your platform is Linux'
+	echo 'Your platform is GNU/Linux.'
+	echo 'Use build-gnu.sh.'
+	exit 1
 else
   echo "Your platform ($(uname -a)) is not supported."
   exit 1
