@@ -70,6 +70,10 @@
 もりのくにから /もりのくにから;[imascg] 楽曲名/
 しゅがーはぁとれぼりゅーしょん /しゅがーはぁと☆レボリューション ;[imascg] 楽曲名/
 
+;; 美玲 ;[imascg] 楽曲名/
+;; 肇 ;[imascg] 楽曲名/
+;; りあむ ;[imascg] 楽曲名/
+
 ;; jew
 ねいしょんぶるー /Nation Blue;[imascg] 楽曲名]/
 ねーしょんぶるー /Nation Blue;[imascg] 楽曲名]/
@@ -106,6 +110,9 @@
 とらすとみー /Trust me;[imascg] 楽曲名/
 きみへのうた /君への詩;[imascg] 楽曲名/
 
+ゆめをのぞいたら /夢をのぞいたら;[imascg] 楽曲名/
+;; 第8回 5人曲 ;[imascg] 楽曲名/
+
 ;; AP
 すたー /Star!!;[imascg] 楽曲名/
 めもりーず /Memories;[imascg] 楽曲名/
@@ -139,7 +146,7 @@
 るなてぃっくしょー /Lunatic Show;[imascg] 楽曲名/
 ふりっぷふろっぷ /Flip Flop;[imascg] 楽曲名/
 
-;; SLM
+;; SM
 すのううぃんぐす /Snow Wings;[imascg] 楽曲名/
 すのーうぃんぐす /Snow Wings;[imascg] 楽曲名/
 はにかみでいず /はにかみdays;[imascg] 楽曲名/
@@ -225,17 +232,24 @@
 おねえちゃんですこ /おねえちゃんデスコ;[imascg] 楽曲名/
 ぷりてぃらいあー /Pretty Liar;[imascg] 楽曲名/
 ひかりしんこきゅうみらい /ヒカリ→シンコキュウ→ミライ;[imascg] 楽曲名/
+あんでっどだんすろっく /アンデッド・ダンスロック;[imascg] 楽曲名/
+さにーどろっぷ /サニードロップ;[imascg] 楽曲名/
+すたーりーごーらうんど /Starry-Go-Round;[imascg] 楽曲名/
+むじゅうりょくしゃとる /無重力シャトル;[imascg] 楽曲名/
+
+;; S4N
+とぅるーからーず /TRUE COLORS;[imascg] 楽曲名/
+すてっぷあんどすきっぷ /ステップ&スキップ;[imascg] 楽曲名/
+ごしっぷくらぶ /Gossip Club;[imascg] 楽曲名/
 
 ;; デレステ
-あんでっどだんすろっく /アンデッド・ダンスロック;[imascg] 楽曲名/
-すたーりーごーらうんど /Starry-Go-Round;[imascg] 楽曲名/
 ぱれっと /Palette;[imascg] 楽曲名/
 ぎゆうにんきょうはなふぶき /義勇忍侠花吹雪;[imascg] 楽曲名/
 にーどるらいと /Needle Light;[imascg] 楽曲名/
 ふぁっしねいと /Fascinate;[imascg] 楽曲名/
 おくりものさんでー /O-Ku-Ri-Mo-No Sunday!;[imascg] 楽曲名/
-むじゅうりょくしゃとる /無重力シャトル;[imascg] 楽曲名/
 ばべる /バベル;[imascg] 楽曲名/
+しーくれっとでいぶれいく /Secret Daybreak;[imascg] 楽曲名/
 
 ;; LS
 きらっまんかいすまいる /キラッ！満開スマイル;[imascg] 楽曲名/
@@ -279,6 +293,13 @@
 みかんせいのれきし /未完成の歴史;[imascg] 楽曲名/
 すぷりんぐすくりーみんぐ /Spring Screaming;[imascg] 楽曲名/
 
+;; 3C
+こみっくこずみっく /comic cosmic;[imascg] 楽曲名/
+ふらちなきゃんばす /不埒なCANVAS;[imascg] 楽曲名/
+;; 一般的な単語であるためコメントアウトしています。SKK実装に直接入れて使う以外の用途の場合はコメントを外してください
+;; いんしょう /印象;[imascg] 楽曲名/
+みらーぼーるらぶ /ミラーボール・ラブ;[imascg] 楽曲名/
+
 ;; デレパ
 でれぱでないと /でれぱDEないと;[imascg] 楽曲名/
 でれぱれーど /でれぱれ～ど;[imascg] 楽曲名/
@@ -288,6 +309,7 @@
 う゛ぁーじんらぶ /Virgin Love;[imascg] 楽曲名/
 ほのおのはな /炎の華;[imascg] 楽曲名/
 どれみふぁくとりー /ドレミファクトリー！;[imascg] 楽曲名/
+;; 千枝 ;[imascg] 楽曲名/
 
 ;; その他
 おねがいしんでれら /お願い！シンデレラ;[imascg] 楽曲名/
@@ -295,3 +317,4 @@
 えばーもあ /EVERMORE;[imascg] 楽曲名/
 あおぞらえーる /青空エール;[imascg] 楽曲名/
 すてーじばいすてーじ /Stage bye Stage;[imascg] 楽曲名/
+おうむあむあにこううんを /オウムアムアに幸運を;[imascg] 楽曲名/
