@@ -68,11 +68,11 @@
 
 たにのそこでさくはなは /谷の底で咲く花は;[imascg] 楽曲名/
 もりのくにから /もりのくにから;[imascg] 楽曲名/
-しゅがーはぁとれぼりゅーしょん /しゅがーはぁと☆レボリューション ;[imascg] 楽曲名/
+しゅがーはぁとれぼりゅーしょん /しゅがーはぁと☆レボリューション;[imascg] 楽曲名/
 
-;; 美玲 ;[imascg] 楽曲名/
-;; 肇 ;[imascg] 楽曲名/
-;; りあむ ;[imascg] 楽曲名/
+くろーまいはーと /Claw My Heart;[imascg] 楽曲名/
+あらかねのうつわ /あらかねの器;[imascg] 楽曲名/
+おたへんあんせむ /OTAHEN アンセム;[imascg] 楽曲名/
 
 ;; jew
 ねいしょんぶるー /Nation Blue;[imascg] 楽曲名]/
@@ -111,7 +111,7 @@
 きみへのうた /君への詩;[imascg] 楽曲名/
 
 ゆめをのぞいたら /夢をのぞいたら;[imascg] 楽曲名/
-;; 第8回 5人曲 ;[imascg] 楽曲名/
+さんはいごーるど /Sun!High!Gold!;[imascg] 楽曲名/
 
 ;; AP
 すたー /Star!!;[imascg] 楽曲名/
@@ -236,20 +236,27 @@
 さにーどろっぷ /サニードロップ;[imascg] 楽曲名/
 すたーりーごーらうんど /Starry-Go-Round;[imascg] 楽曲名/
 むじゅうりょくしゃとる /無重力シャトル;[imascg] 楽曲名/
-
-;; S4N
-とぅるーからーず /TRUE COLORS;[imascg] 楽曲名/
-すてっぷあんどすきっぷ /ステップ&スキップ;[imascg] 楽曲名/
-ごしっぷくらぶ /Gossip Club;[imascg] 楽曲名/
-
-;; デレステ
 ぱれっと /Palette;[imascg] 楽曲名/
 ぎゆうにんきょうはなふぶき /義勇忍侠花吹雪;[imascg] 楽曲名/
 にーどるらいと /Needle Light;[imascg] 楽曲名/
 ふぁっしねいと /Fascinate;[imascg] 楽曲名/
 おくりものさんでー /O-Ku-Ri-Mo-No Sunday!;[imascg] 楽曲名/
 ばべる /バベル;[imascg] 楽曲名/
+
+;; SM4N
+とぅるーからーず /TRUE COLORS;[imascg] 楽曲名/
+すてっぷあんどすきっぷ /ステップ&スキップ;[imascg] 楽曲名/
+ごしっぷくらぶ /Gossip Club;[imascg] 楽曲名/
 しーくれっとでいぶれいく /Secret Daybreak;[imascg] 楽曲名/
+ぎゅっとみるきーうぇい /ギュっとMilky Way;[imascg] 楽曲名/
+しあわせのるーる /幸福の法則～ルール～;[imascg] 楽曲名/
+げいずあんどげいず /Gaze and Gaze;[imascg] 楽曲名/
+かがやけびーとしゅーたー /輝け！ビートシューター;[imascg] 楽曲名/
+
+;; デレステ
+ぐれーとじゃーにー /Great Journey;[imascg] 楽曲名/
+おたくいずらぶ /オタク is LOVE!;[imascg] 楽曲名/
+ほほえみだいありー /ほほえみDiary;[imascg] 楽曲名/
 
 ;; LS
 きらっまんかいすまいる /キラッ！満開スマイル;[imascg] 楽曲名/
@@ -299,6 +306,9 @@
 ;; 一般的な単語であるためコメントアウトしています。SKK実装に直接入れて使う以外の用途の場合はコメントを外してください
 ;; いんしょう /印象;[imascg] 楽曲名/
 みらーぼーるらぶ /ミラーボール・ラブ;[imascg] 楽曲名/
+おどるふらっぐしっぷ /躍るFLAGSHIP;[imascg] 楽曲名/
+あたなしあ /Athanasia;[imascg] 楽曲名/
+あんろっくすたーびーと /Unlock Starbeat;[imascg] 楽曲名/
 
 ;; デレパ
 でれぱでないと /でれぱDEないと;[imascg] 楽曲名/
@@ -309,7 +319,7 @@
 う゛ぁーじんらぶ /Virgin Love;[imascg] 楽曲名/
 ほのおのはな /炎の華;[imascg] 楽曲名/
 どれみふぁくとりー /ドレミファクトリー！;[imascg] 楽曲名/
-;; 千枝 ;[imascg] 楽曲名/
+あこがれすてっち /あこがれステッチ;[imascg] 楽曲名/
 
 ;; その他
 おねがいしんでれら /お願い！シンデレラ;[imascg] 楽曲名/
