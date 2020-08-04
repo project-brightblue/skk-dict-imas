@@ -113,7 +113,7 @@
 ゆめをのぞいたら /夢をのぞいたら;[imascg] 楽曲名/
 さんはいごーるど /Sun!High!Gold!;[imascg] 楽曲名/
 
-;; AP
+;; AP1
 すたー /Star!!;[imascg] 楽曲名/
 めもりーず /Memories;[imascg] 楽曲名/
 えんげるあだなすつるぎひかりのしらべ /-LEGNE- 仇なす剣 光の旋律;[imascg] 楽曲名/
@@ -124,6 +124,7 @@
 ごーいん /GOIN'!!!;[imascg] 楽曲名/
 ゆうばえぷれぜんと /夕映えプレゼント;[imascg] 楽曲名/
 
+;; AP2
 しゃいん /Shine!!;[imascg] 楽曲名/
 わたしいろぎふと /私色ギフト;[imascg] 楽曲名/
 はーとぼいす /Heart Voice;[imascg] 楽曲名/
@@ -243,7 +244,7 @@
 おくりものさんでー /O-Ku-Ri-Mo-No Sunday!;[imascg] 楽曲名/
 ばべる /バベル;[imascg] 楽曲名/
 
-;; SM4N
+;; SMN
 とぅるーからーず /TRUE COLORS;[imascg] 楽曲名/
 すてっぷあんどすきっぷ /ステップ&スキップ;[imascg] 楽曲名/
 ごしっぷくらぶ /Gossip Club;[imascg] 楽曲名/
@@ -252,13 +253,17 @@
 しあわせのるーる /幸福の法則～ルール～;[imascg] 楽曲名/
 げいずあんどげいず /Gaze and Gaze;[imascg] 楽曲名/
 かがやけびーとしゅーたー /輝け！ビートシューター;[imascg] 楽曲名/
-
-;; デレステ
-ぐれーとじゃーにー /Great Journey;[imascg] 楽曲名/
 おたくいずらぶ /オタク is LOVE!;[imascg] 楽曲名/
 ほほえみだいありー /ほほえみDiary;[imascg] 楽曲名/
 
-;; LS
+;; デレステ
+たいようのえのぐばこ /太陽の絵の具箱;[imascg] 楽曲名/
+じょーかー /Joker;[imascg] 楽曲名/
+
+;; プリコネ
+ぐれーとじゃーにー /Great Journey;[imascg] 楽曲名/
+
+;; LS1
 きらっまんかいすまいる /キラッ！満開スマイル;[imascg] 楽曲名/
 えちゅーどはいっきょくだけ /エチュードは1曲だけ;[imascg] 楽曲名/
 さんふらわー /SUN♡FLOWER;[imascg] 楽曲名/
@@ -278,6 +283,12 @@
 きゅんきゅんまっくす /きゅん・きゅん・まっくす;[imascg] 楽曲名/
 まっくすびーと /Max Beat;[imascg] 楽曲名/
 たかまりくらいまっくす /TAKAMARI☆CLIMAXXX!!!!!;[imascg] 楽曲名/
+
+;; LSex1
+しんぐざぷろろーぐ /Sing the Prologue♪;[imascg] 楽曲名/
+はるこいふれーむ /春恋フレーム;[imascg] 楽曲名/
+わたしいろのぷれりゅーど /私色のプレリュード;[imascg] 楽曲名/
+せかいめつぼうおあきす /世界滅亡 or KISS;[imascg] 楽曲名/
 
 ;; MS
 ぎんのいるかとあついかぜ /銀のイルカと熱い風;[imascg] 楽曲名/
@@ -303,12 +314,13 @@
 ;; 3C
 こみっくこずみっく /comic cosmic;[imascg] 楽曲名/
 ふらちなきゃんばす /不埒なCANVAS;[imascg] 楽曲名/
-;; 一般的な単語であるためコメントアウトしています。SKK実装に直接入れて使う以外の用途の場合はコメントを外してください
 ;; いんしょう /印象;[imascg] 楽曲名/
 みらーぼーるらぶ /ミラーボール・ラブ;[imascg] 楽曲名/
 おどるふらっぐしっぷ /躍るFLAGSHIP;[imascg] 楽曲名/
 あたなしあ /Athanasia;[imascg] 楽曲名/
 あんろっくすたーびーと /Unlock Starbeat;[imascg] 楽曲名/
+いけないごーあへっど /イケナイGO AHEAD;[imascg] 楽曲名/
+どらいびんぐまいうぇい /Driving My Way;[imascg] 楽曲名/
 
 ;; デレパ
 でれぱでないと /でれぱDEないと;[imascg] 楽曲名/
@@ -328,3 +340,4 @@
 あおぞらえーる /青空エール;[imascg] 楽曲名/
 すてーじばいすてーじ /Stage bye Stage;[imascg] 楽曲名/
 おうむあむあにこううんを /オウムアムアに幸運を;[imascg] 楽曲名/
+なんどでもわらおう /なんどでも笑おう;[imas] 楽曲名/
