@@ -9,7 +9,7 @@ generate (){
 	echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imascg.firstname.utf8
 	echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imascg.fullname.utf8
 	echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imascg.actors.utf8
-	echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imascg.song.utf8
+	# echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imascg.song.utf8
 	echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imascg.unified.utf8
 
 	# idol name
@@ -37,20 +37,20 @@ generate (){
 	echo 'done.'
 
 	# song
-	echo 'Generate song dict...'
-	case "$(uname 2>/dev/null)" in
-		Darwin ) gsed -f ./src/SONG.sed ./src/SONG | iconv -f UTF-8 -t EUC-JP | skkdic-sort > ./SKK-JISYO.imascg.song.euc ;;
-		Linux ) sed -f ./src/SONG.sed ./src/SONG | iconv -f UTF-8 -t EUC-JP | skkdic-sort > ./SKK-JISYO.imascg.song.euc ;;
-	esac
-	echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imascg.song.utf8
-	cat ./src/SONG | skkdic-sort >> ./SKK-JISYO.imascg.song.utf8
-	echo 'done.'
+	# echo 'Generate song dict...'
+	# case "$(uname 2>/dev/null)" in
+	#	Darwin ) gsed -f ./src/SONG.sed ./src/SONG | iconv -f UTF-8 -t EUC-JP | skkdic-sort > ./SKK-JISYO.imascg.song.euc ;;
+	#	Linux ) sed -f ./src/SONG.sed ./src/SONG | iconv -f UTF-8 -t EUC-JP | skkdic-sort > ./SKK-JISYO.imascg.song.euc ;;
+	# esac
+	# echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imascg.song.utf8
+	# cat ./src/SONG | skkdic-sort >> ./SKK-JISYO.imascg.song.utf8
+	# echo 'done.'
 
 	# unified
 	echo 'Generate unified dict...'
-	skkdic-expr2 SKK-JISYO.imascg.actors.euc + SKK-JISYO.imascg.song.euc + SKK-JISYO.imascg.firstname.euc + SKK-JISYO.imascg.fullname.euc > SKK-JISYO.imascg.unified.euc
+	skkdic-expr2 SKK-JISYO.imascg.actors.euc + SKK-JISYO.imascg.firstname.euc + SKK-JISYO.imascg.fullname.euc > SKK-JISYO.imascg.unified.euc
 	echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imascg.unified.utf8
-	skkdic-expr2 SKK-JISYO.imascg.actors.utf8 + SKK-JISYO.imascg.song.utf8 + SKK-JISYO.imascg.firstname.utf8 + SKK-JISYO.imascg.fullname.utf8 >> SKK-JISYO.imascg.unified.utf8
+	skkdic-expr2 SKK-JISYO.imascg.actors.utf8 + SKK-JISYO.imascg.firstname.utf8 + SKK-JISYO.imascg.fullname.utf8 >> SKK-JISYO.imascg.unified.utf8
 	echo 'done.'
 }
 
