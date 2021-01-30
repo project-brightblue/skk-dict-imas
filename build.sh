@@ -15,26 +15,26 @@ generate (){
 	echo '🦄 Generate cinderella girls dict...'
 	# idol name
 	echo '👧 Generate idols name dict...'
-	cat ./src/FIRSTNAME_cg | skkdic-sort >> ./SKK-JISYO.imascg.firstname.utf8
+	skkdic-expr2 ./src/FIRSTNAME_cg | skkdic-sort >> ./SKK-JISYO.imascg.firstname.utf8
 	case "$(uname 2>/dev/null)" in
-		Darwin ) gsed -f ./src/NAME.sed ./src/FIRSTNAME_cg | skkdic-sort | iconv -f UTF-8 -t EUC-JP > ./SKK-JISYO.imascg.firstname.euc ;;
-		Linux ) sed -f ./src/NAME.sed ./src/FIRSTNAME_cg | skkdic-sort | iconv -f UTF-8 -t EUC-JP > ./SKK-JISYO.imascg.firstname.euc ;;
+		Darwin ) gsed -f ./src/NAME.sed ./src/FIRSTNAME_cg | skkdic-sort | skkdic-expr2 | iconv -f UTF-8 -t EUC-JP > ./SKK-JISYO.imascg.firstname.euc ;;
+		Linux ) sed -f ./src/NAME.sed ./src/FIRSTNAME_cg | skkdic-sort | skkdic-expr2 | iconv -f UTF-8 -t EUC-JP > ./SKK-JISYO.imascg.firstname.euc ;;
 	esac
-	cat ./src/FULLNAME_cg | skkdic-sort >> ./SKK-JISYO.imascg.fullname.utf8
+	skkdic-expr2 ./src/FULLNAME_cg | skkdic-sort >> ./SKK-JISYO.imascg.fullname.utf8
 	case "$(uname 2>/dev/null)" in
-		Darwin ) gsed -f ./src/NAME.sed ./src/FULLNAME_cg | skkdic-sort | iconv -f UTF-8 -t EUC-JP > ./SKK-JISYO.imascg.fullname.euc ;;
-		Linux ) sed -f ./src/NAME.sed ./src/FULLNAME_cg | skkdic-sort | iconv -f UTF-8 -t EUC-JP > ./SKK-JISYO.imascg.fullname.euc ;;
+		Darwin ) gsed -f ./src/NAME.sed ./src/FULLNAME_cg | skkdic-sort | skkdic-expr2 | iconv -f UTF-8 -t EUC-JP > ./SKK-JISYO.imascg.fullname.euc ;;
+		Linux ) sed -f ./src/NAME.sed ./src/FULLNAME_cg | skkdic-sort | skkdic-expr2 | iconv -f UTF-8 -t EUC-JP > ./SKK-JISYO.imascg.fullname.euc ;;
 	esac
 	echo 'done.'
 
 	# actors
 	echo '🎙️ Generate actors dict...'
 	case "$(uname 2>/dev/null)" in
-		Darwin ) gsed -f ./src/NAME.sed ./src/ACTORS_cg | iconv -f UTF-8 -t EUC-JP | skkdic-sort > ./SKK-JISYO.imascg.actors.euc ;;
-		Linux ) sed -f ./src/NAME.sed ./src/ACTORS_cg | iconv -f UTF-8 -t EUC-JP | skkdic-sort > ./SKK-JISYO.imascg.actors.euc ;;
+		Darwin ) gsed -f ./src/NAME.sed ./src/ACTORS_cg | iconv -f UTF-8 -t EUC-JP | skkdic-sort | skkdic-expr2 > ./SKK-JISYO.imascg.actors.euc ;;
+		Linux ) sed -f ./src/NAME.sed ./src/ACTORS_cg | iconv -f UTF-8 -t EUC-JP | skkdic-sort | skkdic-expr2 > ./SKK-JISYO.imascg.actors.euc ;;
 	esac
 	
-	cat ./src/ACTORS_cg | skkdic-sort >> ./SKK-JISYO.imascg.actors.utf8
+	skkdic-expr2 ./src/ACTORS_cg | skkdic-sort >> ./SKK-JISYO.imascg.actors.utf8
 	echo 'done.'
 
 	# song
@@ -44,7 +44,7 @@ generate (){
 	#	Linux ) sed -f ./src/SONG.sed ./src/SONG | iconv -f UTF-8 -t EUC-JP | skkdic-sort > ./SKK-JISYO.imascg.song.euc ;;
 	# esac
 	# echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imascg.song.utf8
-	# cat ./src/SONG | skkdic-sort >> ./SKK-JISYO.imascg.song.utf8
+	# skkdic-expr2 ./src/SONG | skkdic-sort >> ./SKK-JISYO.imascg.song.utf8
 	# echo 'done.'
 
 	# unified
@@ -62,24 +62,24 @@ generate (){
 
 	# idol name
 	echo '👧 Generate idols name dict...'
-	cat ./src/FIRSTNAME_ml | skkdic-sort > ./SKK-JISYO.imasml.firstname
-	cat ./src/FULLNAME_ml | skkdic-sort > ./SKK-JISYO.imasml.fullname
+	skkdic-expr2 ./src/FIRSTNAME_ml | skkdic-sort > ./SKK-JISYO.imasml.firstname
+	skkdic-expr2 ./src/FULLNAME_ml | skkdic-sort > ./SKK-JISYO.imasml.fullname
 	echo 'done.'
 	
 	# actors
 	echo '🎙️ Generate actors dict...'
 	case "$(uname 2>/dev/null)" in
-		Darwin ) gsed -f ./src/ACTORS.sed ./src/ACTORS_ml | iconv -f UTF-8 -t EUC-JP | skkdic-sort > ./SKK-JISYO.imasml.actors.euc ;;
-		Linux ) sed -f ./src/ACTORS.sed ./src/ACTORS_ml | iconv -f UTF-8 -t EUC-JP | skkdic-sort > ./SKK-JISYO.imasml.actors.euc ;;
+		Darwin ) gsed -f ./src/ACTORS.sed ./src/ACTORS_ml | iconv -f UTF-8 -t EUC-JP | skkdic-sort | skkdic-expr2 > ./SKK-JISYO.imasml.actors.euc ;;
+		Linux ) sed -f ./src/ACTORS.sed ./src/ACTORS_ml | iconv -f UTF-8 -t EUC-JP | skkdic-sort | skkdic-expr2 > ./SKK-JISYO.imasml.actors.euc ;;
 	esac
-	cat ./src/ACTORS_ml | skkdic-sort >> ./SKK-JISYO.imasml.actors.utf8
+	skkdic-expr2 ./src/ACTORS_ml | skkdic-sort >> ./SKK-JISYO.imasml.actors.utf8
 	echo 'done.'
 
 	# unified
 	echo '🎙️ Generate unified dict...'
 	skkdic-expr2 SKK-JISYO.imasml.actors.euc + SKK-JISYO.imasml.firstname + SKK-JISYO.imasml.fullname > SKK-JISYO.imasml.unified.euc
-	cat ./SKK-JISYO.imasml.firstname | iconv -f EUC-JP -t UTF-8 > ./firstname.utf8
-	cat ./SKK-JISYO.imasml.fullname | iconv -f EUC-JP -t UTF-8 > ./fullname.utf8
+	skkdic-expr2 ./SKK-JISYO.imasml.firstname | iconv -f EUC-JP -t UTF-8 > ./firstname.utf8
+	skkdic-expr2 ./SKK-JISYO.imasml.fullname | iconv -f EUC-JP -t UTF-8 > ./fullname.utf8
 	skkdic-expr2 SKK-JISYO.imasml.actors.utf8 + ./firstname.utf8 + ./fullname.utf8 >> SKK-JISYO.imasml.unified.utf8
 	rm firstname.utf8 fullname.utf8
 	echo 'done.'
@@ -88,13 +88,13 @@ generate (){
 	
 	# idol name
 	echo '👧 Generate idols name dict...'
-	cat ./src/FIRSTNAME_sc | skkdic-sort > ./SKK-JISYO.imassc.firstname
-	cat ./src/FULLNAME_sc | skkdic-sort > ./SKK-JISYO.imassc.fullname
+	skkdic-expr2 ./src/FIRSTNAME_sc | skkdic-sort > ./SKK-JISYO.imassc.firstname
+	skkdic-expr2 ./src/FULLNAME_sc | skkdic-sort > ./SKK-JISYO.imassc.fullname
 	echo 'done.'
 
 	# actors
 	echo '🎙️ Generate actors dict...'
-	cat ./src/ACTORS_sc | skkdic-sort > ./SKK-JISYO.imassc.actors
+	skkdic-expr2 ./src/ACTORS_sc | skkdic-sort > ./SKK-JISYO.imassc.actors
 	echo 'done.'
 
 	# unified
@@ -104,9 +104,10 @@ generate (){
 
 	# Unified everything
 	echo '🌀 Unifying everything...'
-	cat ./SKK-JISYO.imassc.unified | iconv -f EUC-JP -t UTF-8 > ./sc.utf8
+	echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imas.unified.utf8
+	skkdic-expr2 ./SKK-JISYO.imassc.unified | iconv -f EUC-JP -t UTF-8 > ./sc.utf8
 	skkdic-expr2 SKK-JISYO.imascg.unified.euc + SKK-JISYO.imasml.unified.euc + SKK-JISYO.imassc.unified > ./SKK-JISYO.imas.unified.euc
-	skkdic-expr2 SKK-JISYO.imascg.unified.utf8 + SKK-JISYO.imasml.unified.utf8 + sc.utf8 > ./SKK-JISYO.imas.unified.utf8
+	skkdic-expr2 SKK-JISYO.imascg.unified.utf8 + SKK-JISYO.imasml.unified.utf8 + sc.utf8 >> ./SKK-JISYO.imas.unified.utf8
 	rm sc.utf8
 	echo 'done.'
 }
