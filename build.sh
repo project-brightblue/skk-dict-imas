@@ -12,7 +12,7 @@ generate (){
 	# echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imascg.song.utf8
 	echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imascg.unified.utf8
 
-	echo '🦄 Generate cinderella girls dict...'
+	echo '🦄 Generate Cinderella Girls dict...'
 	# idol name
 	echo '👧 Generate idols name dict...'
 	skkdic-expr2 ./src/FIRSTNAME_cg | skkdic-sort >> ./SKK-JISYO.imascg.firstname.utf8
@@ -54,37 +54,37 @@ generate (){
 	skkdic-expr2 SKK-JISYO.imascg.actors.utf8 + SKK-JISYO.imascg.firstname.utf8 + SKK-JISYO.imascg.fullname.utf8 >> SKK-JISYO.imascg.unified.utf8
 	echo 'done.'
 
-	echo '🦋 Generate million live dict...'
+	echo '🦋 Generate 765Pro All-Stars / Million Live dict...'
 
 	# 下準備
-	echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imasml.actors.utf8
-	echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imasml.unified.utf8
+	echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imasasml.actors.utf8
+	echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imasasml.unified.utf8
 
 	# idol name
 	echo '👧 Generate idols name dict...'
-	skkdic-expr2 ./src/FIRSTNAME_ml | skkdic-sort > ./SKK-JISYO.imasml.firstname
-	skkdic-expr2 ./src/FULLNAME_ml | skkdic-sort > ./SKK-JISYO.imasml.fullname
+	skkdic-expr2 ./src/FIRSTNAME_asml | skkdic-sort > ./SKK-JISYO.imasasml.firstname
+	skkdic-expr2 ./src/FULLNAME_asml | skkdic-sort > ./SKK-JISYO.imasasml.fullname
 	echo 'done.'
 	
 	# actors
 	echo '🎙️ Generate actors dict...'
 	case "$(uname 2>/dev/null)" in
-		Darwin ) gsed -f ./src/ACTORS.sed ./src/ACTORS_ml | iconv -f UTF-8 -t EUC-JP | skkdic-sort | skkdic-expr2 > ./SKK-JISYO.imasml.actors.euc ;;
-		Linux ) sed -f ./src/ACTORS.sed ./src/ACTORS_ml | iconv -f UTF-8 -t EUC-JP | skkdic-sort | skkdic-expr2 > ./SKK-JISYO.imasml.actors.euc ;;
+		Darwin ) gsed -f ./src/ACTORS.sed ./src/ACTORS_asml | iconv -f UTF-8 -t EUC-JP | skkdic-sort | skkdic-expr2 > ./SKK-JISYO.imasasml.actors.euc ;;
+		Linux ) sed -f ./src/ACTORS.sed ./src/ACTORS_asml | iconv -f UTF-8 -t EUC-JP | skkdic-sort | skkdic-expr2 > ./SKK-JISYO.imasasml.actors.euc ;;
 	esac
-	skkdic-expr2 ./src/ACTORS_ml | skkdic-sort >> ./SKK-JISYO.imasml.actors.utf8
+	skkdic-expr2 ./src/ACTORS_asml | skkdic-sort >> ./SKK-JISYO.imasasml.actors.utf8
 	echo 'done.'
 
 	# unified
 	echo '🎙️ Generate unified dict...'
-	skkdic-expr2 SKK-JISYO.imasml.actors.euc + SKK-JISYO.imasml.firstname + SKK-JISYO.imasml.fullname > SKK-JISYO.imasml.unified.euc
-	skkdic-expr2 ./SKK-JISYO.imasml.firstname | iconv -f EUC-JP -t UTF-8 > ./firstname.utf8
-	skkdic-expr2 ./SKK-JISYO.imasml.fullname | iconv -f EUC-JP -t UTF-8 > ./fullname.utf8
-	skkdic-expr2 SKK-JISYO.imasml.actors.utf8 + ./firstname.utf8 + ./fullname.utf8 >> SKK-JISYO.imasml.unified.utf8
+	skkdic-expr2 SKK-JISYO.imasasml.actors.euc + SKK-JISYO.imasasml.firstname + SKK-JISYO.imasasml.fullname > SKK-JISYO.imasasml.unified.euc
+	skkdic-expr2 ./SKK-JISYO.imasasml.firstname | iconv -f EUC-JP -t UTF-8 > ./firstname.utf8
+	skkdic-expr2 ./SKK-JISYO.imasasml.fullname | iconv -f EUC-JP -t UTF-8 > ./fullname.utf8
+	skkdic-expr2 SKK-JISYO.imasasml.actors.utf8 + ./firstname.utf8 + ./fullname.utf8 >> SKK-JISYO.imasasml.unified.utf8
 	rm firstname.utf8 fullname.utf8
 	echo 'done.'
 
-	echo '✨ Generate shiny colors dict...'
+	echo '✨ Generate Shiny Colors dict...'
 	
 	# idol name
 	echo '👧 Generate idols name dict...'
@@ -106,8 +106,8 @@ generate (){
 	echo '🌀 Unifying everything...'
 	echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imas.unified.utf8
 	skkdic-expr2 ./SKK-JISYO.imassc.unified | iconv -f EUC-JP -t UTF-8 > ./sc.utf8
-	skkdic-expr2 SKK-JISYO.imascg.unified.euc + SKK-JISYO.imasml.unified.euc + SKK-JISYO.imassc.unified > ./SKK-JISYO.imas.unified.euc
-	skkdic-expr2 SKK-JISYO.imascg.unified.utf8 + SKK-JISYO.imasml.unified.utf8 + sc.utf8 >> ./SKK-JISYO.imas.unified.utf8
+	skkdic-expr2 SKK-JISYO.imascg.unified.euc + SKK-JISYO.imasasml.unified.euc + SKK-JISYO.imassc.unified > ./SKK-JISYO.imas.unified.euc
+	skkdic-expr2 SKK-JISYO.imascg.unified.utf8 + SKK-JISYO.imasasml.unified.utf8 + sc.utf8 >> ./SKK-JISYO.imas.unified.utf8
 	rm sc.utf8
 	echo 'done.'
 }

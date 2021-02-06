@@ -32,16 +32,16 @@ $ git clone https://github.com/project-brightblue/skk-dict-imas.git
 |SKK-JISYO.imascg.unified.euc |全部入り               |EUC-JP    |
 |SKK-JISYO.imascg.unified.utf8|全部入り               |UTF-8     |
 
-## ミリオンライブ 辞書一覧
+## 765プロオールスターズ / ミリオンライブ 辞書一覧
 
-|ファイル名                   |辞書の内容             |文字コード|
-|-----------------------------|-----------------------|----------|
-|SKK-JISYO.imasml.actors.euc  |声優名                 |EUC-JP    |
-|SKK-JISYO.imasml.actors.utf8 |声優名                 |UTF-8     |
-|SKK-JISYO.imasml.firstname   |アイドル名(下の名前)   |EUC-JP    |
-|SKK-JISYO.imasml.fullname    |アイドル名(フルネーム) |EUC-JP    |
-|SKK-JISYO.imasml.unified.euc |全部入り               |EUC-JP    |
-|SKK-JISYO.imasml.unified.utf8|全部入り               |UTF-8     |
+|ファイル名                     |辞書の内容             |文字コード|
+|-------------------------------|-----------------------|----------|
+|SKK-JISYO.imasasml.actors.euc  |声優名                 |EUC-JP    |
+|SKK-JISYO.imasasml.actors.utf8 |声優名                 |UTF-8     |
+|SKK-JISYO.imasasml.firstname   |アイドル名(下の名前)   |EUC-JP    |
+|SKK-JISYO.imasasml.fullname    |アイドル名(フルネーム) |EUC-JP    |
+|SKK-JISYO.imasasml.unified.euc |全部入り               |EUC-JP    |
+|SKK-JISYO.imasasml.unified.utf8|全部入り               |UTF-8     |
 
 ## シャイニーカラーズ 辞書一覧
 
