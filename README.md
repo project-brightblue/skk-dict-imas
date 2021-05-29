@@ -76,17 +76,24 @@ $ git clone https://github.com/project-brightblue/skk-dict-imas.git
 ibus-skkの設定画面を開き、辞書タブ内でダウンロードした辞書をシステム辞書として追加すると辞書が使用できるようになります。  
 2018年7月8日以降、辞書側の更新でUTF-8版の辞書がご利用いただけるようになりました。OSのロケールがUTF-8の場合は、UTF-8版の辞書をご利用ください。
 
+## 主な派生物
+
+### [skk-jisyo-imasparql](https://github.com/banjun/skk-jisyo-imasparql)
+
+オープンデータを基にアイマスSKK辞書の自動生成を試みるプロジェクトです。この辞書のフォーマットを参考にしたそうです。  
+**ユニット名の辞書が必要な方はこちらの辞書に含まれています**ので、利用をご検討ください。
+
 ## ライセンス
 
 [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed)  
 
-## 謝辞(敬称略)
+## 謝辞
 
-* mzp( [@mzp](https://twitter.com/mzp))
-* ばんじゅん( [@banjun](https://twitter.com/banjun))
+* [Hiroki Mizuno 様](https://github.com/mzp)
+* [banjun 様](https://github.com/banjun)
 
-・・・上の2名には辞書作成時にTwitterで助言を頂きました。
+辞書作成時にアドバイスを頂きました。
 
-* kin'u( [@corvussolis](https://twitter.com/corvussolis))
+* [Nobuyuki Sasaki 様](https://github.com/nathancorvussolis)
 
-・・・SKK実装の仕様についてTwitterでの情報提供を頂きました。
+SKK実装の仕様について情報提供を頂きました。
