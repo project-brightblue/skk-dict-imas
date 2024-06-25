@@ -101,13 +101,32 @@ generate (){
 	skkdic-expr2 ./SKK-JISYO.imassc.firstname + ./SKK-JISYO.imassc.fullname + ./SKK-JISYO.imassc.actors > ./SKK-JISYO.imassc.unified
 	echo 'done.'
 
+	echo '🏫 Generate Gakuen dict...'
+
+	# idol name
+	echo '👧 Generate idols name dict...'
+	skkdic-expr2 ./src/gk/FIRSTNAME | skkdic-sort > ./SKK-JISYO.gkmas.firstname
+	skkdic-expr2 ./src/gk/FULLNAME | skkdic-sort > ./SKK-JISYO.gkmas.fullname
+	echo 'done.'
+
+	# actors
+	echo '🎙️ Generate actors dict...'
+	skkdic-expr2 ./src/gk/ACTORS | skkdic-sort > ./SKK-JISYO.gkmas.actors
+	echo 'done.'
+
+	# unified
+	echo '🌀 Generate unified dict...'
+	skkdic-expr2 ./SKK-JISYO.gkmas.firstname + ./SKK-JISYO.gkmas.fullname + ./SKK-JISYO.gkmas.actors > ./SKK-JISYO.gkmas.unified
+	echo 'done.'
+
 	# Unified everything
 	echo '🌀 Unifying everything...'
 	echo ';; -*- fundamental -*- ; coding: utf-8 -*-' > ./SKK-JISYO.imas.unified.utf8
 	skkdic-expr2 ./SKK-JISYO.imassc.unified | iconv -f EUC-JP -t UTF-8 > ./sc.utf8
-	skkdic-expr2 SKK-JISYO.imascg.unified.euc + SKK-JISYO.imasasml.unified.euc + SKK-JISYO.imassc.unified > ./SKK-JISYO.imas.unified.euc
-	skkdic-expr2 SKK-JISYO.imascg.unified.utf8 + SKK-JISYO.imasasml.unified.utf8 + sc.utf8 >> ./SKK-JISYO.imas.unified.utf8
-	rm sc.utf8
+	skkdic-expr2 ./SKK-JISYO.gkmas.unified | iconv -f EUC-JP -t UTF-8 > ./gk.utf8
+	skkdic-expr2 SKK-JISYO.imascg.unified.euc + SKK-JISYO.imasasml.unified.euc + SKK-JISYO.imassc.unified + SKK-JISYO.gkmas.unified > ./SKK-JISYO.imas.unified.euc
+	skkdic-expr2 SKK-JISYO.imascg.unified.utf8 + SKK-JISYO.imasasml.unified.utf8 + sc.utf8 + gk.utf8 >> ./SKK-JISYO.imas.unified.utf8
+	rm sc.utf8 gk.utf8
 	echo 'done.'
 }
 
